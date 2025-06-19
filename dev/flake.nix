@@ -25,7 +25,6 @@
             programs.home-manager.enable = true;
 
             home.packages = with pkgs; [
-              git
               neovim
               curl
               wget
@@ -35,8 +34,6 @@
               openjdk21
               maven
               docker
-	      jetbrains.idea-community
-	      vscode-with-extensions
 	      iputils
 	      bind
 	      nmap
