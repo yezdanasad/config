@@ -10,9 +10,10 @@
   outputs = { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs { inherit system; };
+      pkgs = import nixpkgs { inherit system; 
+                              config.allowUnfree = true; };
     in {
-      homeConfigurations.my-dev = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.asad = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
           {
@@ -39,7 +40,7 @@
 	      iputils
 	      bind
 	      nmap
-	      netTools
+	      nettools
 	      zoxide
 	      bat
 	      podman
