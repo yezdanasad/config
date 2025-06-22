@@ -40,8 +40,10 @@
 	      nettools
 	      zoxide
 	      bat
+	      #podman and things it need to run
 	      podman
 	      podman-compose
+	      uidmap
             ];
 
             # optional: set environment variables or add config files
