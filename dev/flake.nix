@@ -41,6 +41,7 @@
 	      zoxide
 	      bat
 	      podman
+	      podman-compose
             ];
 
             # optional: set environment variables or add config files
